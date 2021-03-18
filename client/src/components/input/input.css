@@ -1,0 +1,19 @@
+input {
+    border: none;
+    border-bottom: 3px solid #566885;
+    max-width: 470px;
+    width: 100%;
+    padding: 5px;
+    color: #566885;
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 18px;
+    line-height: 21px;
+    margin-bottom: 20px;
+}
+
+input:focus {
+    outline: none;
+    transform: scale(1.05);
+}

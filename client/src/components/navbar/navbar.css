@@ -1,0 +1,38 @@
+.navbar { 
+    display: flex;
+    justify-content: center;
+    height: 50px;
+    background-color: #fff;
+    width: 100%;
+}
+
+.container {
+    max-width: 1140px;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.navbar__logo {
+    width: 63px;
+    height: 34px;
+    margin-right: 16px;
+    margin-left: 50px;
+}
+
+.content {
+    display: flex;
+    align-items: center;
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 20px;
+    line-height: 23px;
+    color: #566885;
+}
+
+.navbar__login, .navbar__registration {
+    cursor: pointer;
+    margin-right: 27px;
+}

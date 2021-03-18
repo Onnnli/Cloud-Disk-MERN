@@ -1,0 +1,33 @@
+.fileList {
+    display: flex;
+    flex-direction: column;
+}
+
+.fileList__header {
+    padding-bottom: 6px;
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 16px;
+    color: #566885;
+    border-bottom: 2px solid #566885;
+
+
+
+    display: grid;
+    grid-template-columns: 1fr 4fr repeat(4, 1fr);
+    text-align: center;
+}
+
+.fileList__name  {
+    grid-column-start: 2;
+}
+
+.fileList__date {
+    grid-column-start: 5;
+}
+
+.fileList__size {
+    grid-column-start: 6;
+}

@@ -1,0 +1,60 @@
+.file {
+    margin-top: 10px;
+    padding-bottom: 10px;
+    border-bottom: 2px solid #566885;
+    display: grid;
+    grid-template-columns: 1fr 4fr repeat(4, 1fr);
+    align-items: center;
+    cursor: pointer;
+
+}
+
+.file:hover .file__date  {
+    grid-column-start: 3;
+}
+.file:hover .file__size  {
+    grid-column-start: 4;
+}
+
+.file:hover .file__download {
+    display: block;
+    grid-column-start: 5;
+}
+
+.file:hover .file__delete {
+    display: block;
+
+    grid-column-start: 6;
+}
+
+
+.file__img {
+    justify-self: center;
+}
+.file__name  {
+    grid-column-start: 2;
+}
+
+.file__date {
+    grid-column-start: 5;
+    justify-self: center;
+}
+
+.file__size {
+    grid-column-start: 6;
+    justify-self: center;
+
+}
+
+.file__btn {
+    display: none;
+    margin: 0 auto ;
+    border: 1px solid #566885;
+    box-sizing: border-box;
+    border-radius: 37px;
+    background-color: transparent;
+    outline: none;
+    padding: 10px;
+    width: 70px;
+
+}

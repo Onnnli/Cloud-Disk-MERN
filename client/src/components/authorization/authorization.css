@@ -1,0 +1,44 @@
+.authorization {
+    padding: 25px 33px 20px;
+    background-color: #fff;
+    border-radius: 27px;
+    filter: drop-shadow(4px 4px 4px rgba(92, 92, 92, 0.25));
+    max-width: 540px;
+    display: flex;
+    flex-direction: column;
+    margin: 0 auto;
+    margin-top: 150px;
+}
+
+.authorization input {
+    margin-bottom: 24px;
+}
+
+.authorization__header {
+    margin-bottom: 27px;
+    text-align: center;
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 28px;
+    line-height: 33px;
+    color: #566885;
+}
+
+.authorization__btn {
+    padding: 5px 10px;
+    border: none;
+    left: 837px;
+    top: 579px;
+    background: #566885;
+    border-radius: 12px;
+    outline: none;
+    cursor: pointer;
+    color: #fff;
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 22px;
+    line-height: 26px;
+    align-self: flex-end;
+}
