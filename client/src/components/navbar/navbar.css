@@ -15,21 +15,22 @@
 }
 
 .navbar__logo {
-    width: 63px;
-    height: 34px;
+    width: 50px;
+    height: 50px;
 }
 
 .content {
     width: 100%;
     display: flex;
     align-items: center;
-    justify-content: space-around;
+    justify-content: space-between;
     font-family: Roboto;
     font-style: normal;
     font-weight: bold;
     font-size: 20px;
     line-height: 23px;
     color: #566885;
+    box-shadow: 0px 3px 4px rgba(92, 92, 92, 0.25);
 }
 
 .navbar__login, .navbar__registration {
@@ -48,4 +49,30 @@
 }
 .navbar__search:focus {
     transform: scale(1);
+}
+
+.navbar__avatar {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+}
+
+.navbar__header {
+    color: #566885;
+    margin-left: 15px;
+}
+
+.content__logo {
+    display: flex;
+    align-items: center;
+}
+
+.user__info {
+    display: flex;
+    align-items: center;
+}
+
+.user__auth {
+    display: flex;
+    align-items: center;
 }

@@ -1,0 +1,43 @@
+.profile {
+    display: flex;
+    max-width: 1140px;
+    margin: 50px auto;
+    flex-direction: column;
+
+}
+
+.profile button {
+    width: 200px;
+    align-self: flex-end;
+    padding: 8px;
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 16px;
+    color: #566885;
+    border: 1px solid #566885;
+    box-sizing: border-box;
+    border-radius: 14px;
+    outline: none;
+    cursor: pointer;
+    margin-bottom: 20px;
+}
+
+
+.profile input {
+    width: 300px;
+    align-self: flex-end;
+    border: none;
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 16px;
+    color: #566885;
+    box-sizing: border-box;
+    border-radius: 14px;
+    outline: none;
+    cursor: pointer;
+    margin-bottom: 20px;
+}

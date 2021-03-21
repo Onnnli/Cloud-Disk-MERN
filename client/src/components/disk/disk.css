@@ -9,8 +9,16 @@
     display: flex;
     margin-bottom: 25px;
     align-items: center;
+    justify-content: space-between;
 }
+.disk__btn__sort {
+    display: flex;
+    align-items: center;
+    max-width: 350px;
+    width: 100%;
+    justify-content: space-evenly;
 
+}
 .disk__back, .disk__create {
     padding: 15px 16px;
     margin-right: 10px;
@@ -27,6 +35,25 @@
 }
 .disk__back:focus, .disk__create:focus {
     outline: none;
+}
+
+.disk__plate, .disk__list {
+    height: 20px;
+    width: 20px;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    background: no-repeat center center;
+    -webkit-background-size: contain;
+    background-size: contain;
+}
+
+.disk__list {
+    background-image: url('../../assets/img/sortList.svg');
+}
+
+.disk__plate {
+    background-image: url('../../assets/img/sortUnion.svg');
 }
 
 

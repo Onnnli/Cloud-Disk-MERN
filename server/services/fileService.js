@@ -4,8 +4,8 @@ const File = require('../models/File')
 const config = require('config')
 
 class FileService {
-    createDir(file) {
-        const filePath = `${config.get('filePath')}\\${file.user}\\${file.path}`
+    createDir(req, file) {
+        const filePath = this.getPath(req, file)
         return new Promise(((resolve, reject) => {
             try {
                 if (!fs.existsSync(filePath)) {
@@ -19,12 +19,12 @@ class FileService {
             }
         }))
     }
-    getPath(file) {
-        return config.get('filePath') + '\\' + file.user + '\\' + file.path
+    getPath(req, file) {
+        return req.filePath + '\\' + file.user + '\\' + file.path
     }
     
-    deleteFile(file) {
-        const path = this.getPath(file)
+    deleteFile(req, file) {
+        const path = this.getPath(req, file)
         if(file.type === 'dir') {
             fs.rmdirSync(path)
         } else {

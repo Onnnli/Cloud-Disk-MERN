@@ -9,8 +9,11 @@ router.post('/upload', authMiddleware, FileController.uploadFile)
 router.get('', authMiddleware, FileController.getFiles)
 router.get('/download', authMiddleware, FileController.downloadFile)
 router.get('/search', authMiddleware, FileController.searchFile)
-
 router.delete('/', authMiddleware, FileController.deleteFile)
+router.post('/avatar', authMiddleware, FileController.uploadAvatar)
+router.delete('/avatar', authMiddleware, FileController.deleteAvatar)
+
+
 
 
 
